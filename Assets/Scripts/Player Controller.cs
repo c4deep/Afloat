@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
             // Create a movement vector relative to the player's local space
             Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
             // Apply movement to the character controller
-            characterController.Move += (moveDirection * moveSpeed * Time.deltaTime);
+            Boat.position += (moveDirection * moveSpeed * Time.deltaTime);
         }
     }
 }
